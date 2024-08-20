@@ -1,0 +1,12 @@
+[package]
+name = "pep639-globs-py"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "pep639_globs"
+
+[dependencies]
+glob = "0.3.1"
+pep639-globs = { version = "0.1.0", path = ".." }
+pyo3 = { version = "0.22.2", features = ["extension-module", "abi3-py39"] }
